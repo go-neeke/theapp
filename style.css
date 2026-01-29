@@ -304,3 +304,46 @@ footer {
   transform:translateY(0);
 }
 
+/* CONTACT - KAKAO */
+.contact-box {
+  max-width: 520px;
+}
+
+.contact-desc {
+  margin: 12px 0 28px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.kakao-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  background: #FEE500;
+  color: #000;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0 16px 40px rgba(0,0,0,.15);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.kakao-btn img {
+  width: 32px;
+  height: 32px;
+}
+
+.kakao-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 60px rgba(0,0,0,.25);
+}
+
+@media (max-width: 768px) {
+  .kakao-btn {
+    justify-content: center;
+    font-size: 17px;
+  }
+}
+
+
