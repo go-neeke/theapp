@@ -1,389 +1,180 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>더앱 | 모바일 앱 개발·유지보수 파트너</title>
-  <meta name="description" content="더앱은 모바일 앱 기획부터 출시, 운영/유지보수까지 함께하는 개발 파트너입니다." />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>더앱 | 모바일 앱 개발 파트너</title>
+    <meta name="description" content="더앱은 비즈니스를 함께 고민하는 모바일 앱 개발 파트너입니다." />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!-- Top Bar -->
-  <header class="topbar" id="topbar">
-    <div class="container topbar__inner">
-      <a class="brand" href="#home" aria-label="THEAPP 홈">
-        <span class="brand__mark">THE</span><span class="brand__name">APP</span>
-      </a>
 
-      <nav class="nav" aria-label="주요 메뉴">
-        <a class="nav__link" href="#services">서비스</a>
-        <a class="nav__link" href="#works">포트폴리오</a>
-        <a class="nav__link" href="#process">프로세스</a>
-        <a class="nav__link" href="#about">회사소개</a>
-        <a class="nav__link nav__cta" href="#contact">무료상담</a>
-      </nav>
+<header class="topbar">
+    <div class="wrap nav">
+        <div class="brand">
+            <span class="dot"></span>
+            <span>더앱</span>
+        </div>
 
-      <button class="hamburger" id="hamburger" aria-label="모바일 메뉴 열기" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+        <nav class="menu">
+            <a href="#about">소개</a>
+            <a href="#services">서비스</a>
+            <a href="#portfolio">포트폴리오</a>
+            <a href="#contact">문의</a>
+        </nav>
+
+        <a href="#contact" class="btn primary">문의하기</a>
     </div>
+</header>
 
-    <!-- Mobile menu -->
-    <div class="mnav" id="mnav" aria-hidden="true">
-      <div class="container mnav__inner">
-        <a class="mnav__link" href="#services">서비스</a>
-        <a class="mnav__link" href="#works">포트폴리오</a>
-        <a class="mnav__link" href="#process">프로세스</a>
-        <a class="mnav__link" href="#about">회사소개</a>
-        <a class="mnav__link mnav__cta" href="#contact">무료상담</a>
-      </div>
+<!-- HERO -->
+<section class="hero">
+    <div class="wrap hero-inner">
+        <div class="hero-text">
+            <h1>
+                아이디어가<br>
+                서비스가 되기까지
+            </h1>
+            <p>
+                더앱은 앱을 만드는 곳이 아니라,<br>
+                비즈니스를 함께 고민하는 개발 파트너입니다.
+            </p>
+            <div class="hero-actions">
+                <a class="btn primary" href="#contact">문의하기</a>
+                <a class="btn ghost" href="#portfolio">작업 보기</a>
+            </div>
+        </div>
+
+        <img
+                class="hero-img"
+                src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=900&q=80"
+                alt="앱 목업 이미지"
+        />
     </div>
-  </header>
+</section>
 
-  <!-- Hero -->
-  <main id="home">
-    <section class="hero slider" id="heroSlider">
-      <div class="slides">
+<!-- ABOUT -->
+<section id="about" class="section-soft">
+    <div class="wrap grid two">
+        <img
+                class="section-img"
+                src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?auto=format&fit=crop&w=900&q=80"
+                alt="회의하는 모습"
+        />
 
-        <!-- Slide 1 -->
-        <div class="slide active">
-          <div class="container slide__inner">
-            <p class="eyebrow">Mobile App Development</p>
-            <h1>
-              모바일 앱 개발<br>
-              <span class="accent">기획부터 출시까지</span>
-            </h1>
-            <p class="desc">
-              아이디어 단계부터 운영까지<br>
-              함께 고민하는 개발 파트너
+        <div>
+            <h2>우리는 이렇게 일합니다</h2>
+            <p>
+                빠르게 만들기보다,<br>
+                오래 쓸 수 있는 방향을 먼저 생각합니다.
             </p>
-            <a href="#contact" class="btn btn--primary">무료 상담하기</a>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="slide">
-          <div class="container slide__inner">
-            <p class="eyebrow">Startup · Business</p>
-            <h1>
-              스타트업 · 소상공인을 위한<br>
-              <span class="accent">실무형 앱 개발</span>
-            </h1>
-            <p class="desc">
-              보여주기용 개발이 아닌<br>
-              실제 운영 가능한 서비스
-            </p>
-            <a href="#services" class="btn btn--primary">서비스 보기</a>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="slide">
-          <div class="container slide__inner">
-            <p class="eyebrow">Maintenance</p>
-            <h1>
-              외주 후 방치된 앱?<br>
-              <span class="accent">유지보수까지 책임</span>
-            </h1>
-            <p class="desc">
-              구조 개선 · 리팩토링 · 성능 안정화
-            </p>
-            <a href="#works" class="btn btn--primary">포트폴리오</a>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- dots -->
-      <div class="slider-dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-    </section>
-
-
-    <!-- Trust strip -->
-    <section class="strip">
-      <div class="container strip__inner reveal">
-        <div class="strip__item">
-          <div class="strip__num">01</div>
-          <div class="strip__txt">스타트업 MVP / 프로토타입</div>
-        </div>
-        <div class="strip__item">
-          <div class="strip__num">02</div>
-          <div class="strip__txt">하이브리드(WebView) / 네이티브</div>
-        </div>
-        <div class="strip__item">
-          <div class="strip__num">03</div>
-          <div class="strip__txt">리팩토링 / 성능 / 안정화</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="section__kicker">Services</p>
-          <h2 class="section__title">더앱이 해드립니다</h2>
-          <p class="section__desc">
-            기술 나열보다 “대표님이 원하는 결과”에 집중합니다.
-          </p>
-        </div>
-
-        <div class="grid grid--4">
-          <article class="card reveal">
-            <div class="card__icon">📱</div>
-            <h3 class="card__title">모바일 앱 개발</h3>
-            <p class="card__desc">Android / iOS / 하이브리드 앱 개발</p>
-            <ul class="card__list">
-              <li>운영을 고려한 구조 설계</li>
-              <li>성능/안정성 중심 구현</li>
+            <ul class="checklist">
+                <li>비즈니스 맥락을 먼저 이해합니다</li>
+                <li>필요 없는 기능은 먼저 말합니다</li>
+                <li>출시 이후까지 함께합니다</li>
             </ul>
-          </article>
-
-          <article class="card reveal" style="--delay:80ms">
-            <div class="card__icon">⚡</div>
-            <h3 class="card__title">MVP 빠른 제작</h3>
-            <p class="card__desc">아이디어 검증용 최소 기능 구현</p>
-            <ul class="card__list">
-              <li>핵심 플로우 우선</li>
-              <li>빠른 출시/피드백</li>
-            </ul>
-          </article>
-
-          <article class="card reveal" style="--delay:160ms">
-            <div class="card__icon">🧩</div>
-            <h3 class="card__title">유지보수 & 개선</h3>
-            <p class="card__desc">외주 후 방치된 앱, 다시 살립니다</p>
-            <ul class="card__list">
-              <li>리팩토링/구조 개선</li>
-              <li>크래시/속도 이슈 해결</li>
-            </ul>
-          </article>
-
-          <article class="card reveal" style="--delay:240ms">
-            <div class="card__icon">🧠</div>
-            <h3 class="card__title">기획 보완/컨설팅</h3>
-            <p class="card__desc">아이디어를 ‘서비스’로 바꿉니다</p>
-            <ul class="card__list">
-              <li>현실적인 기능 범위</li>
-              <li>일정/비용 최적화</li>
-            </ul>
-          </article>
         </div>
-      </div>
-    </section>
-
-    <!-- Works -->
-    <section class="section section--alt" id="works">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="section__kicker">Portfolio</p>
-          <h2 class="section__title">포트폴리오</h2>
-          <p class="section__desc">
-            “무엇을 만들었는지”보다 “어떤 문제를 해결했는지”를 보여드립니다.
-          </p>
-        </div>
-
-        <div class="grid grid--3">
-          <article class="work reveal">
-            <div class="work__meta">
-              <span class="tag">모바일</span><span class="tag">운영개선</span>
-            </div>
-            <h3 class="work__title">서비스 앱 안정화</h3>
-            <p class="work__desc">잦은 크래시/느린 로딩 문제를 구조 개선으로 안정화</p>
-            <div class="work__foot">
-              <span class="work__k">결과</span>
-              <span class="work__v">운영 안정 / 장애 감소</span>
-            </div>
-          </article>
-
-          <article class="work reveal" style="--delay:80ms">
-            <div class="work__meta">
-              <span class="tag">MVP</span><span class="tag">런칭</span>
-            </div>
-            <h3 class="work__title">스타트업 MVP 제작</h3>
-            <p class="work__desc">핵심 플로우 중심으로 빠르게 제작해 초기 검증 지원</p>
-            <div class="work__foot">
-              <span class="work__k">결과</span>
-              <span class="work__v">빠른 출시 / 피드백 수집</span>
-            </div>
-          </article>
-
-          <article class="work reveal" style="--delay:160ms">
-            <div class="work__meta">
-              <span class="tag">하이브리드</span><span class="tag">WebView</span>
-            </div>
-            <h3 class="work__title">하이브리드 앱 구축</h3>
-            <p class="work__desc">웹 기반 서비스의 앱화 + 네이티브 기능 연동</p>
-            <div class="work__foot">
-              <span class="work__k">결과</span>
-              <span class="work__v">개발 효율 / 확장성 확보</span>
-            </div>
-          </article>
-        </div>
-
-        <div class="center reveal" style="--delay:220ms">
-          <a class="btn btn--primary" href="#contact">포트폴리오 문의하기</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Process -->
-    <section class="section" id="process">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="section__kicker">Process</p>
-          <h2 class="section__title">진행 방식</h2>
-          <p class="section__desc">
-            연락이 끊기지 않게, 단계별로 진행 상황을 공유합니다.
-          </p>
-        </div>
-
-        <div class="timeline">
-          <div class="step reveal">
-            <div class="step__num">01</div>
-            <div class="step__body">
-              <div class="step__title">상담 & 요구사항 정리</div>
-              <div class="step__desc">목표/기능/일정/예산을 빠르게 정리합니다.</div>
-            </div>
-          </div>
-
-          <div class="step reveal" style="--delay:80ms">
-            <div class="step__num">02</div>
-            <div class="step__body">
-              <div class="step__title">기획/설계</div>
-              <div class="step__desc">운영을 고려한 구조·화면·데이터 흐름을 설계합니다.</div>
-            </div>
-          </div>
-
-          <div class="step reveal" style="--delay:160ms">
-            <div class="step__num">03</div>
-            <div class="step__body">
-              <div class="step__title">개발</div>
-              <div class="step__desc">핵심 기능부터 단계별로 구현하고 결과물을 공유합니다.</div>
-            </div>
-          </div>
-
-          <div class="step reveal" style="--delay:240ms">
-            <div class="step__num">04</div>
-            <div class="step__body">
-              <div class="step__title">테스트</div>
-              <div class="step__desc">실사용 환경 기준으로 오류/성능을 점검합니다.</div>
-            </div>
-          </div>
-
-          <div class="step reveal" style="--delay:320ms">
-            <div class="step__num">05</div>
-            <div class="step__body">
-              <div class="step__title">출시 & 유지보수</div>
-              <div class="step__desc">출시 이후에도 안정적으로 운영되도록 지원합니다.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="section section--alt" id="about">
-      <div class="container">
-        <div class="split">
-          <div class="split__left reveal">
-            <p class="section__kicker">About</p>
-            <h2 class="section__title">더앱은 “운영”을 보는 개발을 합니다</h2>
-            <p class="section__desc">
-              개발은 만들어주는 것으로 끝나지 않습니다.<br />
-              운영 중 발생하는 이슈를 줄이고, 다음 확장까지 고려해야 합니다.
-            </p>
-
-            <div class="pillbox">
-              <span class="pill">직접 소통</span>
-              <span class="pill">현실적인 일정/비용</span>
-              <span class="pill">안정성 중심</span>
-              <span class="pill">유지보수 가능</span>
-            </div>
-          </div>
-
-          <div class="split__right reveal" style="--delay:120ms">
-            <div class="quote">
-              <div class="quote__title">대표님이 원하는 건 보통 이거예요</div>
-              <ul class="quote__list">
-                <li>“말 잘 통하는 파트너”</li>
-                <li>“일정이 지켜지는 진행”</li>
-                <li>“출시 후에도 운영 가능한 앱”</li>
-              </ul>
-              <div class="quote__foot">더앱은 그 기준으로 일합니다.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="section__kicker">Contact</p>
-          <h2 class="section__title">무료 상담 문의</h2>
-          <p class="section__desc">아이디어만 있어도 괜찮아요. 간단히 남겨주시면 빠르게 연락드릴게요.</p>
-        </div>
-
-        <div class="contact">
-          <form class="form reveal" id="contactForm">
-            <label class="field">
-              <span class="field__label">이름</span>
-              <input class="field__input" name="name" required placeholder="홍길동" />
-            </label>
-
-            <label class="field">
-              <span class="field__label">연락처</span>
-              <input class="field__input" name="phone" required placeholder="010-1234-5678" />
-            </label>
-
-            <label class="field">
-              <span class="field__label">프로젝트 내용</span>
-              <textarea class="field__input field__textarea" name="message" placeholder="원하는 기능 / 일정 / 참고 앱 등을 적어주세요."></textarea>
-            </label>
-
-            <button class="btn btn--primary btn--block" type="submit">문의 보내기</button>
-            <p class="form__hint">* 지금은 데모 알림만 뜹니다. 원하면 EmailJS로 “진짜 메일 수신”까지 바로 붙여줄게요.</p>
-          </form>
-
-          <aside class="contact__side reveal" style="--delay:120ms">
-            <div class="info">
-              <div class="info__title">빠른 상담 포인트</div>
-              <div class="info__item">
-                <div class="info__k">권장</div>
-                <div class="info__v">핵심 기능 3~5개만 정리</div>
-              </div>
-              <div class="info__item">
-                <div class="info__k">선택</div>
-                <div class="info__v">참고 앱/서비스 URL</div>
-              </div>
-              <div class="info__item">
-                <div class="info__k">Tip</div>
-                <div class="info__v">“MVP → 개선” 단계로 가면 비용이 줄어요</div>
-              </div>
-
-              <a class="mini-cta" href="#home">맨 위로 ↑</a>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">THEAPP</div>
-      <div class="footer__txt">
-        © <span id="year"></span> THEAPP. All rights reserved.
-      </div>
     </div>
-  </footer>
+</section>
 
-  <script src="script.js"></script>
+<!-- SERVICES -->
+<section id="services">
+    <div class="wrap">
+        <h2>우리가 하는 일</h2>
+
+        <div class="grid three">
+            <div class="card">
+                <img src="https://undraw.co/api/illustrations/undraw_mobile_application_re_13u3.svg" alt="">
+                <h3>모바일 앱 개발</h3>
+                <p>Android · iOS · 하이브리드</p>
+            </div>
+
+            <div class="card">
+                <img src="https://undraw.co/api/illustrations/undraw_design_process_re_0dhf.svg" alt="">
+                <h3>기획 & 구조 설계</h3>
+                <p>서비스 흐름 · 기능 정의</p>
+            </div>
+
+            <div class="card">
+                <img src="https://undraw.co/api/illustrations/undraw_deploy_re_8f4m.svg" alt="">
+                <h3>출시 & 운영</h3>
+                <p>유지보수 · 개선</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section-soft">
+    <div class="wrap">
+        <h2 class="fade">포트폴리오</h2>
+        <p class="fade muted">
+            실제 서비스 흐름을 기준으로 설계하고 구현했습니다.
+        </p>
+
+        <div class="portfolio-grid">
+            <!-- 프로젝트 1 -->
+            <div class="work-card fade">
+                <div class="mockup">
+                    <img
+                            src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?auto=format&fit=crop&w=800&q=80"
+                            alt="예약 앱 화면"
+                    />
+                </div>
+                <h4>예약 · 주문 앱</h4>
+                <p>MVP 출시 → 운영 데이터 기반 개선</p>
+            </div>
+
+            <!-- 프로젝트 2 -->
+            <div class="work-card fade">
+                <div class="mockup">
+                    <img
+                            src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6?auto=format&fit=crop&w=800&q=80"
+                            alt="콘텐츠 플랫폼 앱"
+                    />
+                </div>
+                <h4>콘텐츠 · 커뮤니티 앱</h4>
+                <p>구독 · 알림 · 사용자 참여 구조</p>
+            </div>
+
+            <!-- 프로젝트 3 -->
+            <div class="work-card fade">
+                <div class="mockup">
+                    <img
+                            src="https://images.unsplash.com/photo-1580910051074-7c4a8f9c2f37?auto=format&fit=crop&w=800&q=80"
+                            alt="업무 관리 앱"
+                    />
+                </div>
+                <h4>업무 관리 앱</h4>
+                <p>사내 프로세스 자동화 · 관리자 기능</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="wrap contact-box">
+        <h2>편하게 문의하세요</h2>
+        <p>
+            아직 정리되지 않아도 괜찮아요.<br>
+            함께 이야기하면서 정리해드릴게요.
+        </p>
+
+        <form id="contactForm">
+            <input type="text" placeholder="이름 / 회사명" required>
+            <input type="email" placeholder="이메일" required>
+            <textarea placeholder="문의 내용" required></textarea>
+            <button class="btn primary" type="submit">문의 보내기</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © <span id="year"></span> 더앱
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
